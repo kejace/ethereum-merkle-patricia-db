@@ -31,7 +31,8 @@ library
                  , base16-bytestring
                  , data-default
                  , nibblestring
-                 , leveldb-haskell
+            --     , leveldb-haskell
+                 , leveldb-ghcjs
                  , ethereum-rlp
                  , binary
                  , ansi-wl-pprint
@@ -53,7 +54,8 @@ Test-Suite test-merkel-patricia-db
     hs-source-dirs:     test, src
     build-depends:      base >=4 && < 5
                     , data-default
-                    , leveldb-haskell
+                  --  , leveldb-haskell
+                    , leveldb-ghcjs
                     , resourcet
                     , bytestring
                     , base16-bytestring
